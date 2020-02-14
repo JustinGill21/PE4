@@ -21,9 +21,9 @@ void DisplayBoard(int arr[_boardSize][_boardSize]) {
       {
         value = "X";
       }
-      else if (arr[i][j] == -1 ? "O")
+      else if (arr[i][j] == -1)
       {
-        value = "O"
+        value = "O";
       }
       else
       {
