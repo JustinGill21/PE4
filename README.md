@@ -5,3 +5,6 @@ Connor Radeloff - Person2
 
 Our game is a simple tic tac toe game between two players.
 The user inputs a row and column for their choice (zero-indexed), and the change is reflected and displayed on the board.
+
+Compilation: compile with command `g++ -std=c++11 TicTacToe.cpp -o TicTacToe`
+To run: `./TicTacToe`
