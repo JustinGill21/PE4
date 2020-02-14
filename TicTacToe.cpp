@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string.h>
 
 using namespace std;
 
@@ -25,22 +26,34 @@ void PlaceMarker(int myarr[3][3], int row, int col, int marker)
   myarr[row][col] = marker;
 }
 
-int main()
-{
-  //this is our tic tac toe board. You already understand how to play.
-  int myArray[3][3];
-
-  PlaceMarker(myArray, 0, 0, 1);
-
-
-  DisplayBoard(myArray);
-
-  return 0;
-}
-
 void GetPlayerChoice(int* col, int* row) {
   cout << "Select column:";
   cin >> *col;
   cout << "Select row:";
   cin >> *row;
+}
+\
+int main()
+{
+
+  cout << "No lines for borders are drawn, you're a big boy and know where things are." << endl;
+  cout << "Please use zero based indexing." << endl;
+  cout << "X goes first. Have fun!" << endl;
+
+  // Set all values in array to 
+  int myArray[3][3];
+  memset(myArray, 0, sizeof(myArray));
+  
+  for (int i = 0; i < 9; i++)
+  {
+    DisplayBoard(myArray);
+
+    int row;
+    int col;
+    GetPlayerChoice(&col, &row);
+
+    // `? :` statement determines if x or o.
+    PlaceMarker(myArray, row, col, i%2 == 0 ? 1 : -1);
+  }
+  return 0;
 }
