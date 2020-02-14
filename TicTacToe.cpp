@@ -2,35 +2,36 @@
 
 using namespace std;
 
-const int _boardSize = 3;
+void DisplayBoard(int myarr[3][3])
+{
+  for(int i = 0; i < 3; i++){
+    for(int j = 0; j < 3; j++){
+      if(myarr[i][j] == 1){
+        cout << "X" << " ";
+      }
+      else if(myarr[i][j] == 0){
+        cout << " " << " ";
+      }
+      else{
+        cout << "O" << " ";
+      }
+    }
+    cout << endl;
+  }
+}
 
 int main()
 {
+  int myArray[3][3];
+  for(int i = 0; i < 3; i++)
+  {
+    for(int j = 0; j < 3; j++)
+    {
+      myArray[i][j] = 0;
+    }
+  }
 
+  DisplayBoard(myArray);
 
   return 0;
-}
-
-void DisplayBoard(int arr[_boardSize][_boardSize]) {
-  for (int i = 0; i < _boardSize; i++)
-  {
-    for (int j = 0; j < _boardSize; j++)
-    {
-      string value;
-      if (arr[i][j] == 1)
-      {
-        value = "X";
-      }
-      else if (arr[i][j] == -1)
-      {
-        value = "O";
-      }
-      else
-      {
-        value = " "
-      }
-      cout << value << " " << endl; 
-    }
-    cout << "\n";
-  }
 }
