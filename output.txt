@@ -1,0 +1,48 @@
+No lines for borders are drawn, you're a big boy and know where things are.
+Please use zero based indexing.
+X goes first. Have fun!
+      
+      
+      
+Select column:0
+Select row:0
+X     
+      
+      
+Select column:1
+Select row:1
+X     
+  O   
+      
+Select column:1
+Select row:0
+X X   
+  O   
+      
+Select column:2
+Select row:0
+X X O 
+  O   
+      
+Select column:0
+Select row:2
+X X O 
+  O   
+X     
+Select column:0
+Select row:1
+X X O 
+O O   
+X     
+Select column:2
+Select row:1
+X X O 
+O O X 
+X     
+Select column:1
+Select row:2
+X X O 
+O O X 
+X O   
+Select column:2
+Select row:2
