@@ -37,3 +37,10 @@ int main()
 
   return 0;
 }
+
+void GetPlayerChoice(int* col, int* row) {
+  cout << "Select column:";
+  cin >> *col;
+  cout << "Select row:";
+  cin >> *row;
+}
