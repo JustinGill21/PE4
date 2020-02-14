@@ -20,16 +20,18 @@ void DisplayBoard(int myarr[3][3])
   }
 }
 
+void PlaceMarker(int myarr[3][3], int row, int col, int marker)
+{
+  myarr[row][col] = marker;
+}
+
 int main()
 {
+  //this is our tic tac toe board. You already understand how to play.
   int myArray[3][3];
-  for(int i = 0; i < 3; i++)
-  {
-    for(int j = 0; j < 3; j++)
-    {
-      myArray[i][j] = 0;
-    }
-  }
+
+  PlaceMarker(myArray, 0, 0, 1);
+
 
   DisplayBoard(myArray);
 
